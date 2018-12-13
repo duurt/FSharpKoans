@@ -19,7 +19,7 @@ module ``about branching`` =
                 "it's odd!"
                 
         let result = isEven 2                
-        AssertEquality result __
+        AssertEquality result "it's even!"
     
     [<Koan>]
     let IfStatementsReturnValues() =
@@ -34,7 +34,7 @@ module ``about branching`` =
             else
                 "no problem here"
 
-        AssertEquality result __
+        AssertEquality result "no problem here"
 
     [<Koan>]
     let BranchingWithAPatternMatch() =
@@ -46,8 +46,8 @@ module ``about branching`` =
         let result1 = isApple "apple"
         let result2 = isApple ""
         
-        AssertEquality result1 __
-        AssertEquality result2 __
+        AssertEquality result1 true
+        AssertEquality result2 false
     
     [<Koan>]
     let UsingTuplesWithIfStatementsQuicklyBecomesClumsy() =
